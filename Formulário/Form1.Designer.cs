@@ -32,10 +32,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.lblCadastrar = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,45 +73,48 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Senha";
             // 
-            // textBox1
+            // txtUsuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(104, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtUsuario.Location = new System.Drawing.Point(104, 63);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(153, 20);
+            this.txtUsuario.TabIndex = 3;
             // 
-            // textBox2
+            // txtSenha
             // 
-            this.textBox2.Location = new System.Drawing.Point(104, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(153, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtSenha.Location = new System.Drawing.Point(104, 100);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(153, 20);
+            this.txtSenha.TabIndex = 4;
             // 
-            // button1
+            // btnIniciar
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(104, 155);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 31);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "INICIAR SESSÃO";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnIniciar.BackColor = System.Drawing.Color.White;
+            this.btnIniciar.FlatAppearance.BorderSize = 0;
+            this.btnIniciar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
+            this.btnIniciar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
+            this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnIniciar.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIniciar.Location = new System.Drawing.Point(104, 155);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(110, 31);
+            this.btnIniciar.TabIndex = 5;
+            this.btnIniciar.Text = "INICIAR SESSÃO";
+            this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
-            // label4
+            // lblCadastrar
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(125, 190);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Cadastrar";
+            this.lblCadastrar.AutoSize = true;
+            this.lblCadastrar.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadastrar.ForeColor = System.Drawing.Color.White;
+            this.lblCadastrar.Location = new System.Drawing.Point(125, 190);
+            this.lblCadastrar.Name = "lblCadastrar";
+            this.lblCadastrar.Size = new System.Drawing.Size(68, 20);
+            this.lblCadastrar.TabIndex = 6;
+            this.lblCadastrar.Text = "Cadastrar";
             // 
             // pictureBox1
             // 
@@ -122,6 +125,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
@@ -130,10 +134,10 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(309, 236);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblCadastrar);
+            this.Controls.Add(this.btnIniciar);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -151,10 +155,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Label lblCadastrar;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

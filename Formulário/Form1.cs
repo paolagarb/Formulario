@@ -21,5 +21,16 @@ namespace Formulário
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+            string usuario, senha;
+            
+        }
     }
 }
