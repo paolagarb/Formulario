@@ -51,7 +51,7 @@
             this.txtUsuarioC = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSenhaC = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -233,6 +233,7 @@
             this.btnCadastrar.TabIndex = 20;
             this.btnCadastrar.Text = "CADASTRAR";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // lblLogin
             // 
@@ -278,13 +279,13 @@
             this.label6.TabIndex = 24;
             this.label6.Text = "Senha";
             // 
-            // textBox1
+            // txtSenhaC
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 118);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(181, 20);
-            this.textBox1.TabIndex = 25;
+            this.txtSenhaC.Location = new System.Drawing.Point(93, 118);
+            this.txtSenhaC.Name = "txtSenhaC";
+            this.txtSenhaC.PasswordChar = '*';
+            this.txtSenhaC.Size = new System.Drawing.Size(181, 20);
+            this.txtSenhaC.TabIndex = 25;
             // 
             // Cadastro
             // 
@@ -292,7 +293,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(309, 352);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSenhaC);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtUsuarioC);
@@ -347,6 +348,6 @@
         private System.Windows.Forms.TextBox txtUsuarioC;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSenhaC;
     }
 }
