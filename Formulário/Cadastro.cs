@@ -21,5 +21,17 @@ namespace Formulário
         {
             Close();
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLogin_Click(object sender, EventArgs e)
+        {
+            Form1 login = new Form1();
+            login.Show();
+            this.Visible = false;
+        }
     }
 }

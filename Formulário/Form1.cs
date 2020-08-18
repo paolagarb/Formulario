@@ -32,5 +32,12 @@ namespace Formulário
             string usuario, senha;
             
         }
+
+        private void lblCadastrar_Click(object sender, EventArgs e)
+        {
+            Cadastro cadastro = new Cadastro();
+            cadastro.Show();
+            this.Visible = false;
+        }
     }
 }
