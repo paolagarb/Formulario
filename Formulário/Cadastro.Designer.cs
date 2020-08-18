@@ -38,16 +38,16 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtCEP = new System.Windows.Forms.TextBox();
+            this.txtNumeroCasa = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.txtUF = new System.Windows.Forms.TextBox();
+            this.txtTel1 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtTel2 = new System.Windows.Forms.TextBox();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.lblLogin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +72,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label2
             // 
@@ -157,106 +158,106 @@
             this.label10.TabIndex = 10;
             this.label10.Text = "E-mail";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 20);
-            this.textBox1.TabIndex = 11;
+            this.txtNome.Location = new System.Drawing.Point(92, 58);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(181, 20);
+            this.txtNome.TabIndex = 11;
             // 
-            // textBox2
+            // txtCEP
             // 
-            this.textBox2.Location = new System.Drawing.Point(92, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(78, 20);
-            this.textBox2.TabIndex = 12;
+            this.txtCEP.Location = new System.Drawing.Point(92, 90);
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(78, 20);
+            this.txtCEP.TabIndex = 12;
             // 
-            // textBox3
+            // txtNumeroCasa
             // 
-            this.textBox3.Location = new System.Drawing.Point(197, 90);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(76, 20);
-            this.textBox3.TabIndex = 13;
+            this.txtNumeroCasa.Location = new System.Drawing.Point(197, 90);
+            this.txtNumeroCasa.Name = "txtNumeroCasa";
+            this.txtNumeroCasa.Size = new System.Drawing.Size(76, 20);
+            this.txtNumeroCasa.TabIndex = 13;
             // 
-            // textBox5
+            // txtCidade
             // 
-            this.textBox5.Location = new System.Drawing.Point(92, 121);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(97, 20);
-            this.textBox5.TabIndex = 15;
+            this.txtCidade.Location = new System.Drawing.Point(92, 121);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(97, 20);
+            this.txtCidade.TabIndex = 15;
             // 
-            // textBox6
+            // txtUF
             // 
-            this.textBox6.Location = new System.Drawing.Point(219, 121);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(53, 20);
-            this.textBox6.TabIndex = 16;
+            this.txtUF.Location = new System.Drawing.Point(219, 121);
+            this.txtUF.Name = "txtUF";
+            this.txtUF.Size = new System.Drawing.Size(53, 20);
+            this.txtUF.TabIndex = 16;
             // 
-            // textBox7
+            // txtTel1
             // 
-            this.textBox7.Location = new System.Drawing.Point(94, 184);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(83, 20);
-            this.textBox7.TabIndex = 17;
+            this.txtTel1.Location = new System.Drawing.Point(94, 184);
+            this.txtTel1.Name = "txtTel1";
+            this.txtTel1.Size = new System.Drawing.Size(83, 20);
+            this.txtTel1.TabIndex = 17;
             // 
-            // textBox4
+            // txtEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(92, 152);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(180, 20);
-            this.textBox4.TabIndex = 18;
+            this.txtEmail.Location = new System.Drawing.Point(92, 152);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(180, 20);
+            this.txtEmail.TabIndex = 18;
             // 
-            // textBox8
+            // txtTel2
             // 
-            this.textBox8.Location = new System.Drawing.Point(183, 184);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(89, 20);
-            this.textBox8.TabIndex = 19;
+            this.txtTel2.Location = new System.Drawing.Point(183, 184);
+            this.txtTel2.Name = "txtTel2";
+            this.txtTel2.Size = new System.Drawing.Size(89, 20);
+            this.txtTel2.TabIndex = 19;
             // 
-            // button1
+            // btnCadastrar
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(103, 228);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 30);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "CADASTRAR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCadastrar.BackColor = System.Drawing.Color.White;
+            this.btnCadastrar.FlatAppearance.BorderSize = 0;
+            this.btnCadastrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
+            this.btnCadastrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
+            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCadastrar.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.ForeColor = System.Drawing.Color.Black;
+            this.btnCadastrar.Location = new System.Drawing.Point(103, 228);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(97, 30);
+            this.btnCadastrar.TabIndex = 20;
+            this.btnCadastrar.Text = "CADASTRAR";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // lblLogin
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(129, 261);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 20);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Login";
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.BackColor = System.Drawing.Color.Transparent;
+            this.lblLogin.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.ForeColor = System.Drawing.Color.White;
+            this.lblLogin.Location = new System.Drawing.Point(129, 261);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(45, 20);
+            this.lblLogin.TabIndex = 21;
+            this.lblLogin.Text = "Login";
             // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(309, 306);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(309, 304);
+            this.Controls.Add(this.lblLogin);
+            this.Controls.Add(this.btnCadastrar);
+            this.Controls.Add(this.txtTel2);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtTel1);
+            this.Controls.Add(this.txtUF);
+            this.Controls.Add(this.txtCidade);
+            this.Controls.Add(this.txtNumeroCasa);
+            this.Controls.Add(this.txtCEP);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -285,15 +286,15 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtCEP;
+        private System.Windows.Forms.TextBox txtNumeroCasa;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.TextBox txtUF;
+        private System.Windows.Forms.TextBox txtTel1;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtTel2;
+        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Label lblLogin;
     }
 }
