@@ -12,8 +12,6 @@ using Formulário.Entities;
 namespace Formulário
 {
 
-
-
     public partial class Cadastro : Form
     {
         public Cadastro()
@@ -33,12 +31,12 @@ namespace Formulário
 
         private void lblLogin_Click(object sender, EventArgs e)
         {
-            Form1 login = new Form1();
+            Form1 login = new Form1(txtUsuarioC.Text, txtSenhaC.Text);
             login.Show();
             this.Visible = false;
         }
 
-        private void btnCadastrar_Click(object sender, EventArgs e)
+        public void btnCadastrar_Click(object sender, EventArgs e)
         {
             List<Cadastros> cad = new List<Cadastros>();
 
@@ -85,5 +83,6 @@ namespace Formulário
                 txtTel2.Text = "";
             }
         }
+       
     }
 }
