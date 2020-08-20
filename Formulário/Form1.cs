@@ -21,12 +21,7 @@ namespace Formulário
             InitializeComponent();
         }
 
-        public Form1(string usuario, string senha) : this()
-        {
-            confirmarUsuario = usuario;
-            confirmarSenha = senha;
-        }
-
+       
         private void Form1_Load(object sender, EventArgs e)
         {
 

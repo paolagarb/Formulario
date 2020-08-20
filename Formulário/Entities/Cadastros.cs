@@ -38,16 +38,5 @@ namespace Formulário.Entities
         }
 
 
-       /* public bool Login(string usuario, string senha)
-        {
-            if (Usuario == usuario || Senha == senha)
-            {
-                return true;
-            } else
-            {
-                return false;
-            }
-           
-        }*/
     }
 }
