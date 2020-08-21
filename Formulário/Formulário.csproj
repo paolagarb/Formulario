@@ -46,11 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cadastro.cs">
+    <Compile Include="..\..\copia\Cadastro.cs">
       <SubType>Form</SubType>
+      <Link>Cadastro.cs</Link>
     </Compile>
-    <Compile Include="Cadastro.Designer.cs">
+    <Compile Include="..\..\copia\Cadastro.Designer.cs">
       <DependentUpon>Cadastro.cs</DependentUpon>
+      <Link>Cadastro.Designer.cs</Link>
     </Compile>
     <Compile Include="Entities\Cadastros.cs" />
     <Compile Include="Form1.cs">
@@ -61,8 +63,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Cadastro.resx">
+    <EmbeddedResource Include="..\..\copia\Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
+      <Link>Cadastro.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
